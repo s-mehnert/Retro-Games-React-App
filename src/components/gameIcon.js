@@ -9,10 +9,10 @@ function GameIcon(props) {
 
     return (
         <figure>
-            <a href={props.href} target="_blank">
-                <img src={props.src} alt={props.alt} title={props.alt} onClick={handleClick} />
-                <figcaption>{props.alt}</figcaption>
+            <a href={props.href} target="_blank" onClick={handleClick}>
+                <img src={props.src} alt={props.alt} title={props.alt} />
             </a>
+            <figcaption>{props.alt}</figcaption>
         </figure>
     );
 }
