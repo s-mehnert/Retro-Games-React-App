@@ -1,11 +1,11 @@
 import './App.css';
-import main from './components/main';
+import Header from './components/header';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">    
-        {main()}
+        <Header />
       </header>
       <section>
         
