@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './components/header';
 import GameBox from './components/gameBox';
+import { selectedGame } from './components/gameIcon';
 
 function App() {
   return (
@@ -9,7 +10,10 @@ function App() {
         <Header />
       </header>
       <section className="Game-box">
-        <GameBox game="Snake" />
+        <div>
+          <GameBox game={selectedGame} />
+          <h3>{selectedGame}</h3>
+        </div>
       </section>
     </div>
   );

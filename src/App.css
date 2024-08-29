@@ -27,6 +27,10 @@ body {
   justify-items: space-evenly;
 }
 
+.Game-box {
+  color: ghostwhite;
+}
+
 figure {
   border: 3px solid rgb(193, 152, 20);
   border-radius: 5%;
