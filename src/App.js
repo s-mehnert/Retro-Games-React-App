@@ -1,7 +1,6 @@
 import './App.css';
 import Header from './components/header';
 import GameBox from './components/gameBox';
-import { selectedGame } from './components/gameIcon';
 
 function App() {
   return (
@@ -11,8 +10,8 @@ function App() {
       </header>
       <section className="Game-box">
         <div>
-          <GameBox game={selectedGame} />
-          <h3>{selectedGame}</h3>
+          <GameBox game="placeholder 1" />
+          <h3>placeholder 2</h3>
         </div>
       </section>
     </div>
