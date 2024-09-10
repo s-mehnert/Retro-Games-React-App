@@ -1,10 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 
 function GameIcon(props) {
-    const [selectedGame, setSelectedGame] = useState("");
-    const handleClick = ({target}) => {
-        setSelectedGame(target.title);
-    };
+    
+  const handleClick = event => {
+    const newGame = event.target.title;
+    props.setSelectedGame(newGame);
+  };
 
     return (
       <div>
@@ -14,7 +15,6 @@ function GameIcon(props) {
             </a>
             <figcaption>{props.alt}</figcaption>
         </figure>
-        <section>{selectedGame}</section>
       </div>
     );
 }

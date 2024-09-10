@@ -1,8 +1,15 @@
+import React, { useState } from 'react';
 import './App.css';
 import Header from './components/header';
 import GameBox from './components/gameBox';
 
 function App() {
+
+  const [selectedGame, setSelectedGame] = useState("Select Game To Play");
+  const onSelectGameHandler = (newGame) => {
+    setSelectedGame(newGame);
+  };
+  
   return (
     <div className="App">
       <header className="App-header">    
@@ -10,8 +17,8 @@ function App() {
       </header>
       <section className="Game-box">
         <div>
-          <GameBox game="placeholder 1" />
-          <h3>placeholder 2</h3>
+          <GameBox game={selectedGame ? selectedGame : "placeholder 1"} />
+          <h3>Placeholder for iframe</h3>
         </div>
       </section>
     </div>
