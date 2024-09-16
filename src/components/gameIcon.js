@@ -4,18 +4,14 @@ function GameIcon(props) {
     
   const handleClick = event => {
     const newGame = event.target.title;
-    props.setSelectedGame(newGame);
+    props.handler(newGame);
   };
 
     return (
-      <div>
         <figure>
-            <a href="#.Game-box" onClick={handleClick}>
-                <img src={props.src} alt={props.alt} title={props.alt} />
-            </a>
-            <figcaption>{props.alt}</figcaption>
+          <img src={props.src} alt={props.alt} title={props.alt} onClick={handleClick} />
+          <figcaption>{props.alt}</figcaption>
         </figure>
-      </div>
     );
 }
 

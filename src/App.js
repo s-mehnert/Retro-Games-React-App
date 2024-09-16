@@ -6,20 +6,17 @@ import GameBox from './components/gameBox';
 function App() {
 
   const [selectedGame, setSelectedGame] = useState("Select Game To Play");
-  const onSelectGameHandler = (newGame) => {
+  const onSelectGameHandler = newGame => {
     setSelectedGame(newGame);
   };
   
   return (
     <div className="App">
       <header className="App-header">    
-        <Header />
+        <Header handler={onSelectGameHandler} />
       </header>
       <section className="Game-box">
-        <div>
-          <GameBox game={selectedGame ? selectedGame : "placeholder 1"} />
-          <h3>Placeholder for iframe</h3>
-        </div>
+        <GameBox game={selectedGame} />      
       </section>
     </div>
   );

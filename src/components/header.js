@@ -2,7 +2,7 @@ import React from 'react';
 import {games} from './gameData';
 import GameIcon from './gameIcon';
 
-function Header() {
+function Header(props) {
 
   let figures = [];
   for (const game in games) {
@@ -14,7 +14,7 @@ function Header() {
       <h1>RETRO GAMES</h1>
       <p>Pick a game and play.</p>
       <div class="games">
-        {figures.map(game => <GameIcon href={game.href} src={game.src} alt={game.alt} key={game.id} />)}
+        {figures.map(game => <GameIcon href={game.href} src={game.src} alt={game.alt} key={game.id} handler={props.handler} />)}
       </div>
     </div>
   );
