@@ -4,7 +4,7 @@ function GameBox(props) {
     return (
         <>
             <h2>{props.game}</h2>
-            <iframe id={props.game} src={props.src}></iframe>
+            <iframe className="game-window" id={props.game} src={props.src}></iframe>
         </>
     );
 }

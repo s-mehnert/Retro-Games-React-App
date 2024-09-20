@@ -9,11 +9,13 @@ function App() {
   const [selectedGame, setSelectedGame] = useState("Select Game To Play");
   const onSelectGameHandler = newGame => {
     setSelectedGame(newGame);
+    console.log(selectedGame);
+    console.log(games[selectedGame]);
   };
 
   let figures = [];
   for (const game in games) {
-    figures.push({id: game, src: games[game].src, alt: games[game].alt, href: games[game].href});
+    figures.push({id: game, src: games[game].src, name: games[game].name, alt: games[game].alt, href: games[game].href});
   }
   
   return (
@@ -22,7 +24,7 @@ function App() {
         <Header handler={onSelectGameHandler} data={figures} />
       </header>
       <section className="Game-box">
-        <GameBox game={selectedGame} src={games[selectedGame] ? games[selectedGame].href : ""} />      
+        <GameBox game={games[selectedGame].alt} src={games[selectedGame] ? games[selectedGame].href : "https://s-mehnert.github.io/memory_game/"} />      
       </section>
     </div>
   );
