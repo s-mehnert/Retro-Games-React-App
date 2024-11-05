@@ -19,15 +19,17 @@ function App() {
   }
   
   return (
-    <div className="App">
-      <header className="App-header">    
-        <Header handler={onSelectGameHandler} data={figures} />
-      </header>
-      <section className="Game-box">
-        {games[selectedGame] ? <GameBox game={games[selectedGame].alt} src={games[selectedGame].href} /> : <h2>Select Game To Play</h2>}
-        {/* <GameBox game={games[selectedGame].alt} src={games[selectedGame] ? games[selectedGame].href : "https://s-mehnert.github.io/memory_game/"} /> */}
-      </section>
-    </div>
+    <>
+      <h1>RETRO GAMES</h1>
+      <div className="App">
+        <header className="App-header">    
+          <Header handler={onSelectGameHandler} data={figures} />
+        </header>
+        <section className="Game-box">
+          {games[selectedGame] ? <GameBox game={games[selectedGame].alt} src={games[selectedGame].href} /> : <h2>Select Game To Play</h2>}
+        </section>
+      </div>
+    </>
   );
 }
 
