@@ -48,6 +48,10 @@ body {
   height: 80%;
 }
 
+iframe {
+  zoom: 0.65;
+}
+
 figure {
   border: 3px solid rgb(193, 152, 20);
   border-radius: 5%;
@@ -55,6 +59,7 @@ figure {
   height: 100px;
   font-size: small;
   justify-items: center;
+  margin: 10px; 
 }
 
 img {
