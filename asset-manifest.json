@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Retro-Games-React-App/static/css/main.76c998c4.css",
+    "main.js": "/Retro-Games-React-App/static/js/main.d51197aa.js",
+    "static/js/453.78b57cc2.chunk.js": "/Retro-Games-React-App/static/js/453.78b57cc2.chunk.js",
+    "static/media/memory.JPG": "/Retro-Games-React-App/static/media/memory.68f740f3d4c7b8623b3f.JPG",
+    "static/media/frog.png": "/Retro-Games-React-App/static/media/frog.d9b3faeea2ec62196ba7.png",
+    "static/media/spaceInvaders.JPG": "/Retro-Games-React-App/static/media/spaceInvaders.03766e8258c1d68f289d.JPG",
+    "static/media/connectFour.JPG": "/Retro-Games-React-App/static/media/connectFour.e839111ffd1b8d4a0c66.JPG",
+    "static/media/mole.png": "/Retro-Games-React-App/static/media/mole.3536795c7c81ccf1f61c.png",
+    "static/media/tetris.JPG": "/Retro-Games-React-App/static/media/tetris.eef19b658e872a81c616.JPG",
+    "static/media/snake.JPG": "/Retro-Games-React-App/static/media/snake.3cd4c7e00673a0bf6c48.JPG",
+    "index.html": "/Retro-Games-React-App/index.html",
+    "main.76c998c4.css.map": "/Retro-Games-React-App/static/css/main.76c998c4.css.map",
+    "main.d51197aa.js.map": "/Retro-Games-React-App/static/js/main.d51197aa.js.map",
+    "453.78b57cc2.chunk.js.map": "/Retro-Games-React-App/static/js/453.78b57cc2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.76c998c4.css",
+    "static/js/main.d51197aa.js"
+  ]
+}
