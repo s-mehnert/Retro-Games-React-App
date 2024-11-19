@@ -6,7 +6,7 @@
 
 .App-header {
   background-color: rgb(132, 36, 97);
-  width: 35%;
+  width: 25%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,31 +25,26 @@ h1 {
   text-align: center;
 }
 
+h2 {
+  color:rgb(193, 152, 20);
+}
+
+a {
+  color:turquoise;
+  text-decoration: none;
+}
+
 body {
   background-color: #282c34;
 }
 
 .games {
   display: flex;
-  justify-items: center;
+  justify-items: left;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 10%;
+  width: 90%;
   height: 85vh;
-}
-
-.Game-box {
-  color: ghostwhite;
-  margin-left: 2em;
-}
-
-.game-window {
-  width: 50vw;
-  height: 80%;
-}
-
-iframe {
-  zoom: 0.65;
 }
 
 figure {
@@ -65,4 +60,32 @@ figure {
 img {
   width: 95%;
   height: 75%;
+}
+
+.Game-box {
+  color: ghostwhite;
+  margin-left: 2.5em;
+  margin-top: 2.5em;
+}
+
+.game-window {
+  width: 90vw;
+  height: 90%;
+}
+
+iframe {
+  zoom: 0.65;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .games {
+    height: unset;
+  }
+  .Game-box {
+    height: 100vw;
+    align-self: center;
+    justify-self: center;
+    overflow: visible;
+  }
 }
