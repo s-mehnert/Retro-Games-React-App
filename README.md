@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# [React App](https://s-mehnert.github.io/Retro-Games-React-App/) for Playing Retro Games
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The React App brings together several retro games I coded in plain JavaScript along my JS learning journey. All the games exist as separate projects with their own URLs. 
+At this point I simply wanted to have a central access point for all of them that gives a nice overview and lets you play the game right there as well as access the game page itself. Plans for the future include integrating all the games right into the React App, see [below](#Planned for future versions).
 
-## Available Scripts
 
-In the project directory, you can run:
+## Technology used
 
-### `npm start`
+React (create-react-app), JavaScript, HTML, CSS  
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Available Games
 
-### `npm test`
+- Memory - [Repo](https://github.com/s-mehnert/memory_game)
+- Whack the Mole - [Repo](https://github.com/s-mehnert/whackTheMole_game)
+- Connect Four - [Repo](https://github.com/s-mehnert/connectFour_game)
+- Space Invaders - [Repo](https://github.com/s-mehnert/spaceInvaders_game)
+- Snake - [Repo](https://github.com/s-mehnert/snake_game)
+- Frogger - [Repo](https://github.com/s-mehnert/frogger_game)
+- Tetris - [Repo](https://github.com/s-mehnert/tetris_game)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `npm run build`
+- All games are displayed with small icons
+- Games are accessed through clicking on icons
+- Game websites are displayed through iframes
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To play the games, visit [Retro Games](https://s-mehnert.github.io/Retro-Games-React-App/).
 
-### `npm run eject`
+(Note that not all games run correctly in the iframe in all browsers. In that case, access the game site directly by clicking on the link provided.) 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Installation
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+For using the code on your own machine you need to first clone the repo and have node.js installed. 
+Then you need to install the necessary dependencies by running the following code from within the project folder:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```bash 
+npm install
+``` 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+To see the project in your browser on http://localhost:3000/ you need to run the application:
 
-## Learn More
+```bash 
+npm start
+``` 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+For anything beyond that, please refer to the official documentation:
+- [React](https://react.dev/)
+- [Create React App](https://create-react-app.dev/)
+- [How to clone a GitHub Repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## Planned for future versions
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- Integrate games into React App by turning them into React Components
+- Display best scores in current session for all games played
+- Store personal highscores with username in a database
+- Display all times best player scores
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Contributing
 
-### Making a Progressive Web App
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+[MIT](https://choosealicense.com/licenses/mit/)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Acknowledgements
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The JavaScript games were inspired by a [tutorial](https://www.youtube.com/watch?app=desktop&v=lhNdUVh3qCc&t=1657s) by [Ania Kubów](https://www.youtube.com/channel/UC5DNytAJ6_FISueUfzZCVsw).
