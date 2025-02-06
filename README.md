@@ -6,7 +6,8 @@ At this point I simply wanted to have a central access point for all of them tha
 
 ## Technology used
 
-React (create-react-app), JavaScript, HTML, CSS  
+React (create-react-app), JavaScript, HTML, CSS
+Update (2025-02-06): React App migrated to [Vite](https://vite.dev/) as outlined in this [article](https://coreui.io/blog/how-to-migrate-create-react-app-to-vite/).
 
 
 ## Available Games
